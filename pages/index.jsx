@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
+import Layout, { siteTitle } from "../components/Layout";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Date from "../components/date";
@@ -14,13 +14,9 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hi, i´am <strong>Magnus</strong>. I´m a multimedia designer / frontend
-          developer.
+          Hi, i´am <strong>Magnus</strong>. I´m a multimedia designer / frontend developer.
         </p>
-        <p>
-          This is my first blog and i have used Next.js to build it, hope you
-          enjoy.
-        </p>
+        <p>This is my first blog and i have used Next.js to build it, hope you enjoy.</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
