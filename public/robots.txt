@@ -1,0 +1,7 @@
+# Block all crawlers for /posts
+User-agent: *
+Disallow: /posts
+
+# Allow all crawlers
+User-agent: *
+Allow: /
