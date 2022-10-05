@@ -3,19 +3,17 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import React from "react";
 
 const name = "Magnus Nielsen";
 export const siteTitle = "Magnus Next.js Blog";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home }: { children: React.ReactNode; home?: boolean }) {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Hi i am Magnus, and this is my blog using Next.js"
-        />
+        <meta name="description" content="Hi i am Magnus, and this is my blog using Next.js" />
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
